@@ -23,6 +23,9 @@ io.on('connection',function(socket){
 
   // socket.on('change username'. function())
 });
-http.listen(3000,function(){
-	console.log("Listening to connections on *:3000") ;
+Number(process.env.PORT || 3000);
+
+
+http.listen(Number(process.env.PORT || 3000),function(){
+	console.log("Listening to connections on *: ", Number(process.env.PORT || 3000)) ;
 });
