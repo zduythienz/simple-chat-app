@@ -21,7 +21,7 @@ io.on('connection',function(socket){
     io.emit('chat message', msg); // sent message to everyone connect to pool
   });
 
-  socket.on('change username'. function())
+  // socket.on('change username'. function())
 });
 http.listen(3000,function(){
 	console.log("Listening to connections on *:3000") ;
